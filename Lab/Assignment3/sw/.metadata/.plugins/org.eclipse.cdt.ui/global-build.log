@@ -1,0 +1,32 @@
+Nothing to build in platform 'lab_platform'
+
+10:42:01 **** Incremental Build of configuration Debug for project app_rev2 ****
+make all 
+'Building file: ../src/lab0_R5.c'
+'Invoking: ARM R5 gcc compiler'
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab0_R5.o" -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -IC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab0_R5.d" -MT"src/lab0_R5.o" -o "src/lab0_R5.o" "../src/lab0_R5.c"
+'Finished building: ../src/lab0_R5.c'
+' '
+'Building file: ../src/lab0_cortexR5.S'
+'Invoking: ARM R5 gcc compiler'
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab0_cortexR5.o" -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -IC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab0_cortexR5.d" -MT"src/lab0_cortexR5.o" -o "src/lab0_cortexR5.o" "../src/lab0_cortexR5.S"
+'Finished building: ../src/lab0_cortexR5.S'
+' '
+'Building target: app_rev2.elf'
+'Invoking: ARM R5 gcc linker'
+armr5-none-eabi-gcc -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -LC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bsplib/lib -o "app_rev2.elf"  ./src/lab0_R5.o ./src/lab0_cortexR5.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: app_rev2.elf'
+' '
+'Invoking: ARM R5 Print Size'
+armr5-none-eabi-size app_rev2.elf  |tee "app_rev2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7396	   1624	  22572	  31592	   7b68	app_rev2.elf
+'Finished building: app_rev2.elf.size'
+' '
+10:42:02 **** Incremental Build of configuration Debug for project app_rev2_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64431 C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/lab_platform.xpfm standalone_domain C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2_system/Debug/system.bif
+sdcard_gen --xpfm C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/lab_platform.xpfm --sys_config lab_platform --bif C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2_system/Debug/system.bif --bitstream C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2/_ide/bitstream/design_1_wrapper.bit --elf C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2/Debug/app_rev2.elf,psu_cortexr5_0
+creating BOOT.BIN using C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen -arch zynqmp -image C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/app_rev2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

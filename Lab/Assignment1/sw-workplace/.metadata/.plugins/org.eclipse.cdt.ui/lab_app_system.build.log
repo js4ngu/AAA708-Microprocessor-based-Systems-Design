@@ -1,0 +1,10 @@
+14:15:19 **** Incremental Build of configuration Debug for project lab_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50575 C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_platform/export/lab_platform/lab_platform.xpfm standalone_psu_cortexa53_0 C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app_system/Debug/system.bif
+sdcard_gen --xpfm C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_platform/export/lab_platform/lab_platform.xpfm --sys_config lab_platform --bif C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app_system/Debug/system.bif --bitstream C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app/_ide/bitstream/design_1_wrapper.bit --elf C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app/Debug/lab_app.elf,psu_cortexa53_0
+creating BOOT.BIN using C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app/_ide/bitstream/design_1_wrapper.bit
+Running C:/Xilinx/Vitis/2022.1/bin/bootgen -arch zynqmp -image C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+14:15:25 Build Finished (took 5s.862ms)
+

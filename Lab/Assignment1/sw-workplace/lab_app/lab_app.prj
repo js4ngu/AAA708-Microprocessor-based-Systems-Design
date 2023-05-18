@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="lab_app" location="C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_app" platform="C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/sw-workplace/lab_platform/export/lab_platform/lab_platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" systemProject="lab_app_system" sysConfig="lab_platform" runtime="cpp" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="240c4379acf170d0dda98492d63ae0a3">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.516094503">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1591116838" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

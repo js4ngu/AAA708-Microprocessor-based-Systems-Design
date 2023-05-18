@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Mar 10 14:00:27 2023
+# Process ID: 211096
+# Current directory: C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/lab0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent203808 C:\File\Lec\graduate\AAA708-Microprocessor-based-Systems-Design\Lab\Assignment1\lab0\lab0.xpr
+# Log file: C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/lab0/vivado.log
+# Journal file: C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/lab0\vivado.jou
+# Running On: DESKTOP-TV817D3, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34287 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment1/lab0/lab0.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,16 @@
+#include "sleep.h"
+#include "lab0.h"
+#define ON1 0x0000
+#define ON2 0x0100
+#define ON3 0x0008
+#define ON4 0x0004
+#define ON5 0x0082
+
+int aes_main() {
+    uint32_t r3_value;
+    asm volatile ("mov %[r3_value], r3" : [r3_value] "=r" (r3_value));
+
+	if(r3_value == 0x00020000) usleep(100000);
+	else usleep(500000);
+	return 0;
+}

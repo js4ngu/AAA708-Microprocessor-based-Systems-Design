@@ -1,0 +1,26 @@
+20:54:50 **** Incremental Build of configuration Debug for project app_2 ****
+make all 
+'Building file: ../src/lab0_R5.c'
+'Invoking: ARM R5 gcc compiler'
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab0_R5.o" -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -IC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment2/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab0_R5.d" -MT"src/lab0_R5.o" -o "src/lab0_R5.o" "../src/lab0_R5.c"
+'Finished building: ../src/lab0_R5.c'
+' '
+'Building file: ../src/lab0_cortexR5.S'
+'Invoking: ARM R5 gcc compiler'
+armr5-none-eabi-gcc -DARMR5 -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab0_cortexR5.o" -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -IC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment2/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bspinclude/include -MMD -MP -MF"src/lab0_cortexR5.d" -MT"src/lab0_cortexR5.o" -o "src/lab0_cortexR5.o" "../src/lab0_cortexR5.S"
+'Finished building: ../src/lab0_cortexR5.S'
+' '
+'Building target: app_2.elf'
+'Invoking: ARM R5 gcc linker'
+armr5-none-eabi-gcc -mcpu=cortex-r5  -mfloat-abi=hard  -mfpu=vfpv3-d16 -Wl,-T -Wl,../src/lscript.ld -LC:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment2/sw/lab_platform/export/lab_platform/sw/lab_platform/standalone_domain/bsplib/lib -o "app_2.elf"  ./src/lab0_R5.o ./src/lab0_cortexR5.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: app_2.elf'
+' '
+'Invoking: ARM R5 Print Size'
+armr5-none-eabi-size app_2.elf  |tee "app_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7276	   1624	  22572	  31472	   7af0	app_2.elf
+'Finished building: app_2.elf.size'
+' '
+
+20:54:51 Build Finished (took 688ms)
+

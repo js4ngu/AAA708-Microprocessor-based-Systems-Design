@@ -1,0 +1,12 @@
+#include "sleep.h"
+#include "lab0.h"
+
+
+int aes_main() {
+	unsigned char *sw = GPIO_BANK0_DATA_RO;
+
+	if(*sw == 0x00020000) usleep(100000);
+	else usleep(500000);
+
+	return 0;
+}

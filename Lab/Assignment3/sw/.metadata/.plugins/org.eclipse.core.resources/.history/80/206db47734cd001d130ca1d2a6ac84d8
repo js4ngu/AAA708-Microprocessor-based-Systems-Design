@@ -1,0 +1,73 @@
+#include "lab0.h"
+.extern aes_main
+.align 8
+.global main
+
+main:
+	ldr r0, =src	//x0 = *src
+	ldr r1, =dst	//x1 = *dst ofset addr
+	mov r2, #16		//cpy arg
+
+					//x7 array[]
+					//x8 array arg
+
+	mov r9 , #0		//x9  = i
+	mov r10, #0		//x10 = j
+	mov r11, #0		//x11 = min
+	mov r12, #0		//x12 = indxs
+	mov r13, #0		//x13 = temp
+
+copy:
+	ldr r3, [r0], #4   // load a word into r3 and upate r0 (= r0 + 4)
+	str r3, [r1], #4   // store the word to memory and upate r1 (= r1 + 4)
+	subs r2, r2, #1
+	bne  copy
+
+loop1:
+        cmp r9, #16      //for(i = 0; i<10; i++)
+		mov r11, 100	 //min = 100
+        bge forever      //if i >= 16, exit the loop
+		ldr r1, =dst			 //x1 = *dst ofset addr
+
+loop2:
+        cmp r10, #16      		// compare j to 10
+        bge end_loop2    		// if j >= 10, exit the loop
+
+		mov r8, r10				 // array arg x8 = x10 = j
+		ldr r7, [r1], #4		 // r7 = array[j]
+
+		//이하 검증안됨
+		cmp r11, r7				// array[j] > min
+		bge min_update
+
+        add r10, r10, #1   // increment j by 1
+        b loop2          // go back to the start of loop2
+
+min_update:
+	mov r13, r11
+	mov r12, r10
+	br lr
+
+end_loop2:
+        add r0, r0, #1   // increment i by 1
+        b loop1          // go back to the start of loop1
+
+forever:
+	nop
+	b forever
+
+
+.data
+.align 4
+
+src:
+	.word  1,  2,  3,  4,  5,  6,  7,  8
+	.word 11, 12, 13, 14, 15, 16, 17, 18
+
+dst:
+	.space 16  // allocate memory for 16 words
+
+
+// Normal Interrupt Service Routine
+aes_irq:
+	b .

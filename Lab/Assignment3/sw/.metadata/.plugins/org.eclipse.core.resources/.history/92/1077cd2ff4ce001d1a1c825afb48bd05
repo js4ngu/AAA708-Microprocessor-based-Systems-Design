@@ -1,0 +1,14 @@
+#include "sleep.h"
+#include "lab0.h"
+
+int aes_main() {
+    unsigned int *gpio_data_ro = (unsigned int*) GPIO_BANK0_DATA_RO;
+    unsigned int r3_value = *gpio_data_ro;
+
+    if (r3_value == 0x00020000) {
+        usleep(100000);
+    } else {
+        usleep(500000);
+    }
+    return 0;
+}

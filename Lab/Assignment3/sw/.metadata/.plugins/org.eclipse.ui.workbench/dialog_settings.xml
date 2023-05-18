@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\File\Lec\graduate\AAA708-Microprocessor-based-Systems-Design\Lab\Assignment3\memo"/>
+			<item value="C:\File\Lec\graduate\AAA708-Microprocessor-based-Systems-Design\Lab\Assignment3\ref\lab0_CortexR5"/>
+			<item value="C:\File\Lec\graduate\AAA708-Microprocessor-based-Systems-Design\Lab\Assignment2\lab0_CortexA53"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

@@ -1,0 +1,23 @@
+#define MIO23_PIN_MASK 0x00800000
+
+int main() {
+    volatile unsigned int *gpio_data = (unsigned int *)0xFF0A0060;
+    int button_pressed = 0;
+    int button_value;
+
+    // Read the current value of the GPIO pin
+    button_value = (*gpio_data & MIO23_PIN_MASK) ? 1 : 0;
+
+    // Check if the button is pressed
+    if (button_value == 0) {
+        button_pressed = 1;
+    }
+
+    if (button_pressed) {
+        // The button is pressed
+    } else {
+        // The button is not pressed
+    }
+
+    return 0;
+}

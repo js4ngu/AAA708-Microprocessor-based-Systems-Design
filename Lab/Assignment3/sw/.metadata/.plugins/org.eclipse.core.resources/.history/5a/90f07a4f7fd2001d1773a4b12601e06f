@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="app_rev2_system" platform="C:/File/Lec/graduate/AAA708-Microprocessor-based-Systems-Design/Lab/Assignment3/sw/lab_platform/export/lab_platform/lab_platform.xpfm" platformUID="xilinx:ultra96v2::0.0(custom)" sysConfig="lab_platform" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.952158393">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="app_rev2" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexr5_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="app_rev2" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexr5_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.858452918">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="app_rev2" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexr5_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>
